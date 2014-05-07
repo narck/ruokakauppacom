@@ -26,6 +26,11 @@ angular.module('rkcApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+      .when('/food', {
+        templateUrl: 'partials/food',
+        controller: 'FoodCtrl',
+        authenticate: true
+      })
       .otherwise({
         redirectTo: '/'
       });
