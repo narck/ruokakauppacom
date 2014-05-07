@@ -6,3 +6,4 @@ angular.module('rkcApp')
       $scope.awesomeThings = awesomeThings;
     });
   });
+  
