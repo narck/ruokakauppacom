@@ -31,6 +31,14 @@ angular.module('rkcApp', [
         controller: 'FoodCtrl',
         authenticate: true
       })
+      .when('/products', {
+        templateUrl: 'partials/products',
+        controller: 'ProductsCtrl'
+      })
+      .when('/products/:id', {
+        templateUrl: 'partials/product',
+        controller: 'ProductsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
