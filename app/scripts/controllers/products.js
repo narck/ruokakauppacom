@@ -5,6 +5,9 @@ angular.module('rkcApp')
     var sku = $routeParams.id;
     if (sku === undefined) {
     // return to products view
+    $http.get('/api/products').success(function(wewProducts) {
+        $scope.wewProducts = wewProducts;
+    });
     } else {
       $http.get('/api/products/' + sku).success(function(p) {
         $scope.product = p;

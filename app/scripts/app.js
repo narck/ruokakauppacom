@@ -26,11 +26,6 @@ angular.module('rkcApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
-      .when('/food', {
-        templateUrl: 'partials/food',
-        controller: 'FoodCtrl',
-        authenticate: true
-      })
       .when('/products', {
         templateUrl: 'partials/products',
         controller: 'ProductsCtrl'
