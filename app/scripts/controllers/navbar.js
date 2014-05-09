@@ -8,6 +8,9 @@ angular.module('rkcApp')
     }, {
       'title': 'Settings',
       'link': '/settings'
+    }, {
+      'title': 'Suggest a delicious meal',
+      'link': '/meal'
     }];
     
     $scope.logout = function() {
