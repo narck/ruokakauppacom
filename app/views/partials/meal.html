@@ -1,59 +1,79 @@
 
 
 <h1>Here is your delicious five-star™ meal!</h1>
-<h3>For starters</h3>
+
+
 
 <div class="row">
+	<div class="col-md-6">
+		<h3 style="text-align: center; background: #F0F0F0;border-radius:5px;padding-top:20px;">Price:<br /><br />
+			{{ price | number: 2 }}€<br /><br />
+		</h3>
 
+			
+	</div>
+	<div class="col-md-6">
+		<h3 style="text-align: center; background: #F0F0F0;border-radius:5px;padding-top:20px;">Rating:<br /><br />
+			{{ rating | number}}<br /><br />
+		</h3>
+	</div>
 </div>
 
+
+
+<h3 style="text-align: center;">Seductive Starters</h3>
 <div class="row">
 	<div class="col-md-4">
 		<img src="{{starter.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{starter.drink.name}}<br>
+		<a ng-href="/products/{{starter.drink.sku}}">{{starter.drink.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{starter.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{starter.dish.name}}<br>
+		<a ng-href="/products/{{starter.dish.sku}}">{{starter.dish.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{starter.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{starter.side.name}}<br>
+		<a ng-href="/products/{{starter.side.sku}}">{{starter.side.name}}</a><br>
 	</div>
 </div>
 
-<h3>The main course</h3>
+<h3 style="text-align: center;">Mighty Main Course</h3>
 <div class="row">
 	<div class="col-md-4">
 		<img src="{{maincourse.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{maincourse.drink.name}}<br>
+		<a ng-href="/products/{{maincourse.drink.sku}}">{{maincourse.drink.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{maincourse.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{maincourse.dish.name}}<br>
+		<a ng-href="/products/{{maincourse.dish.sku}}">{{maincourse.dish.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{maincourse.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{maincourse.side.name}}<br>
+		<a ng-href="/products/{{maincourse.side.sku}}">{{maincourse.side.name}}</a><br>
 	</div>
 </div>
 
-<h3>Delicous desserts</h3>
+<h3 style="text-align: center;">Delicious Desserts</h3>
 
 <div class="row">
 	<div class="col-md-4">
 		<img src="{{desserts.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{desserts.drink.name}}<br>
+		<a ng-href="/products/{{desserts.drink.sku}}">{{desserts.drink.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{desserts.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{desserts.dish.name}}<br>
+		<a ng-href="/products/{{desserts.dish.sku}}">{{desserts.dish.name}}</a><br>
 	</div>
 	<div class="col-md-4">
 		<img src="{{desserts.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
-		{{desserts.side.name}}<br>
+		<a ng-href="/products/{{desserts.side.sku}}">{{desserts.side.name}}</a><br>
 	</div>
 </div>
 
-<br>
-<a href="{{link}}">Buy this meal</a>
+
+<div class="row">
+	<div class="col-md-12">
+		<h1 style="text-align: center;"><a ng-href="{{link}}">Buy it!</a></h1>
+	</div>
+</div>
+
