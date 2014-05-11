@@ -6,6 +6,7 @@ angular.module('rkcApp')
         
       $scope.meal = meal;
       $scope.starter = meal.starter;
+      $scope.starter.link = "wew";
       $scope.maincourse = meal.maincourse;
       $scope.desserts = meal.desserts;
       $scope.link = Cartlink.generateLink(meal.cart);

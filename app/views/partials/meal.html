@@ -1,20 +1,59 @@
+
+
 <h1>Here is your delicious five-star™ meal!</h1>
-
-
-
 <h3>For starters</h3>
-{{starter.drink.name}}<br>
-{{starter.dish.name}}<br>
-{{starter.side.name}}<br><br>
+
+<div class="row">
+
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<img src="{{starter.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{starter.drink.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{starter.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{starter.dish.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{starter.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{starter.side.name}}<br>
+	</div>
+</div>
 
 <h3>The main course</h3>
-{{maincourse.drink.name}}<br>
-{{maincourse.dish.name}}<br>
-{{maincourse.side.name}}<br><br>
+<div class="row">
+	<div class="col-md-4">
+		<img src="{{maincourse.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{maincourse.drink.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{maincourse.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{maincourse.dish.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{maincourse.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{maincourse.side.name}}<br>
+	</div>
+</div>
 
 <h3>Delicous desserts</h3>
-{{desserts.drink.name}}<br>
-{{desserts.dish.name}}<br>
-{{desserts.side.name}}<br><br>
 
+<div class="row">
+	<div class="col-md-4">
+		<img src="{{desserts.drink.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{desserts.drink.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{desserts.dish.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{desserts.dish.name}}<br>
+	</div>
+	<div class="col-md-4">
+		<img src="{{desserts.side.imgurl}}" style="height:150px;max-width:150px" alt="Delicious!"/><br/>
+		{{desserts.side.name}}<br>
+	</div>
+</div>
+
+<br>
 <a href="{{link}}">Buy this meal</a>
