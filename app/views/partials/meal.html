@@ -1,5 +1,20 @@
 <h1>Here is your delicious five-star™ meal!</h1>
 
-{{meal}}
 
-<a href="cart/populate/{{link}}">Buy this meal</a>
+
+<h3>For starters</h3>
+{{starter.drink.name}}<br>
+{{starter.dish.name}}<br>
+{{starter.side.name}}<br><br>
+
+<h3>The main course</h3>
+{{maincourse.drink.name}}<br>
+{{maincourse.dish.name}}<br>
+{{maincourse.side.name}}<br><br>
+
+<h3>Delicous desserts</h3>
+{{desserts.drink.name}}<br>
+{{desserts.dish.name}}<br>
+{{desserts.side.name}}<br><br>
+
+<a href="{{link}}">Buy this meal</a>
