@@ -3,7 +3,7 @@ ruokakauppacom
 # tuote on todennäköisesti aina loppu™
 Tuntikirjanpito (narchie): https://docs.google.com/spreadsheets/d/1cTXIJkHlUkoj8kyBmqMJWxvhCPQzi9a9JIG3hNqOlZQ/edit?usp=sharing
 
-Tuntikirjanpito (samsalon): 
+Tuntikirjanpito (samsalon): https://docs.google.com/spreadsheets/d/1sE2u6q4WVXEg3KEwZE4FdLOlzAyHP1KPtdbJA12BTyo/edit#gid=0
 
 Osta ruokaa ja selaa ruokakauppaa!
 Yeoman AngularJS fullstackilla™ luotu applikaatio.
