@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('rkcApp')
-  .controller('MealCtrl', function ($scope, $http, Cartlink, Mealstats) {
+  .controller('MealCtrl',['$scope', function ($scope, $http, Cartlink, Mealstats) {
     $http.get('/api/meal').success(function(meal) {
         
       $scope.meal = meal;
@@ -13,4 +13,4 @@ angular.module('rkcApp')
       $scope.rating = Mealstats.rating(meal);
 
     });
-  });
+  }]);

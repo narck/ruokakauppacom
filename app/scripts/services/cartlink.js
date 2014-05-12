@@ -2,6 +2,7 @@
 
 angular.module('rkcApp')
   .factory('Cartlink', function () {
+    
     var baseurl = 'http://verkkokauppa.com/fi/cart/populate?'
     function generate(cart) {
       var string = ''

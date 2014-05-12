@@ -7,7 +7,7 @@ angular.module('rkcApp', [
   'ngRoute',
   'ngAnimate'
 ])
-  .config(function ($routeProvider, $locationProvider, $httpProvider) {
+  .config(function ($scope, $routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
